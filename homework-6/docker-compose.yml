@@ -1,0 +1,17 @@
+version: '3'
+services:
+  maven:
+    build:
+      context: .
+      args:
+        - git_url
+    volumes:
+      - ./webapps:/usr/share/app/target/
+  tomcat8:
+    image: tomcat
+    volumes:
+      - ./webapps:/usr/local/tomcat/webapps
+    depends_on: 
+      - maven   
+    ports:
+      - 8080:8080
