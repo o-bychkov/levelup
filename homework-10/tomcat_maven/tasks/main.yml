@@ -1,4 +1,4 @@
 ---
   - import_tasks: git.yml
-  - import_tasks: maven.yml
   - import_tasks: tomcat.yml
+  - import_tasks: maven.yml
