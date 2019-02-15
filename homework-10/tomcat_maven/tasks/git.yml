@@ -1,0 +1,4 @@
+- name: Download
+  git:
+    repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello
+    dest: /usr/share/app

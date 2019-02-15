@@ -1,0 +1,8 @@
+---
+- hosts: web
+  remote_user: olezzha
+  become: yes 
+  become_user: root
+  roles: 
+    - tomcat_maven
+

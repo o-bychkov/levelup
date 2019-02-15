@@ -1,0 +1,6 @@
+---
+# handlers file for tomcat_maven
+  - name: restart TOMCAT
+    service:
+      name: tomcat8
+      state: restarted
